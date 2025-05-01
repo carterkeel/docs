@@ -5,11 +5,30 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Categories | Carter Keel Docs</title>
+<title>GitHub SSH Setup (Linux) | Carter Keel Docs</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="✅ Prerequisites
+A Linux system (Ubuntu, Debian, Fedora, Arch, etc.)
+Access to a terminal
+OpenSSH installed (usually preinstalled)
+
+🧰 Generate a New SSH Key
+In your terminal, run:
+
+ssh-keygen -t ed25519 -C &ldquo;your_email@example.com&rdquo;
+If ed25519 is not supported, use:
+ssh-keygen -t rsa -b 4096 -C &ldquo;your_email@example.com&rdquo;
+When prompted:
+Save location: Press Enter to use the default (/home/youruser/.ssh/id_ed25519)
+Passphrase: (optional but recommended) Enter a secure passphrase
+
+🔑 Add Your SSH Key to the SSH Agent
+Start the agent (if it’s not running):
+
+eval &ldquo;$(ssh-agent -s)&rdquo;
+Add your key:">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:51632/categories/">
+<link rel="canonical" href="http://localhost:51632/posts/setup_github_ssh_linux/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:51632/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:51632/favicon-16x16.png">
@@ -18,8 +37,7 @@
 <link rel="mask-icon" href="http://localhost:51632/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:51632/categories/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:51632/categories/">
+<link rel="alternate" hreflang="en" href="http://localhost:51632/posts/setup_github_ssh_linux/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,7 +77,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -103,12 +121,67 @@
     </nav>
 </header>
 <main class="main">
-<header class="page-header">
-    <h1>Categories</h1>
-</header>
 
-<ul class="terms-tags">
-</ul>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      GitHub SSH Setup (Linux)
+    </h1>
+    <div class="post-meta"><span title='2025-05-01 17:42:19 -0500 CDT'>May 1, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>✅ Prerequisites
+A Linux system (Ubuntu, Debian, Fedora, Arch, etc.)</p>
+<p>Access to a terminal</p>
+<p>OpenSSH installed (usually preinstalled)</p>
+<ol>
+<li>🧰 Generate a New SSH Key
+In your terminal, run:</li>
+</ol>
+<p>ssh-keygen -t ed25519 -C &ldquo;<a href="mailto:your_email@example.com">your_email@example.com</a>&rdquo;
+If ed25519 is not supported, use:</p>
+<p>ssh-keygen -t rsa -b 4096 -C &ldquo;<a href="mailto:your_email@example.com">your_email@example.com</a>&rdquo;
+When prompted:
+Save location: Press Enter to use the default (/home/youruser/.ssh/id_ed25519)</p>
+<p>Passphrase: (optional but recommended) Enter a secure passphrase</p>
+<ol start="2">
+<li>🔑 Add Your SSH Key to the SSH Agent
+Start the agent (if it’s not running):</li>
+</ol>
+<p>eval &ldquo;$(ssh-agent -s)&rdquo;
+Add your key:</p>
+<p>ssh-add ~/.ssh/id_ed25519
+💡 Replace id_ed25519 if your key has a different filename.</p>
+<ol start="3">
+<li>📋 Add Your Public Key to the Remote Service
+Copy your public key to the clipboard:</li>
+</ol>
+<p>cat ~/.ssh/id_ed25519.pub
+Then copy the output manually and add it to:</p>
+<p>GitHub: Settings → SSH and GPG keys</p>
+<p>GitLab: Preferences → SSH Keys</p>
+<p>Remote server: Paste into ~/.ssh/authorized_keys</p>
+<ol start="4">
+<li>🧪 Test the Connection
+Run the following to test your SSH setup:</li>
+</ol>
+<p>ssh -T <a href="mailto:git@github.com">git@github.com</a>
+You should see a message like:</p>
+<p>Hi yourusername! You&rsquo;ve successfully authenticated.</p>
+<p>🔄 Optional: Use a Specific Key for Git
+If you&rsquo;re using a custom-named key:</p>
+<p>git config &ndash;global core.sshCommand &ldquo;ssh -i ~/.ssh/custom_key&rdquo;</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">
