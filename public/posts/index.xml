@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Carter Keel Docs</title>
-    <link>http://localhost:49329/posts/</link>
+    <link>http://localhost:49618/posts/</link>
     <description>Recent content in Posts on Carter Keel Docs</description>
     <generator>Hugo -- 0.147.1</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 May 2025 22:27:35 -0500</lastBuildDate>
-    <atom:link href="http://localhost:49329/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:49618/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add Post To Docs</title>
-      <link>http://localhost:49329/posts/add_post/</link>
+      <link>http://localhost:49618/posts/add_post/</link>
       <pubDate>Thu, 01 May 2025 22:27:35 -0500</pubDate>
-      <guid>http://localhost:49329/posts/add_post/</guid>
+      <guid>http://localhost:49618/posts/add_post/</guid>
       <description>&lt;p&gt;Follow these steps to add a new post to the documentation website.&lt;/p&gt;
 &lt;h2 id=&#34;1-pull-the-repository&#34;&gt;1. Pull the Repository&lt;/h2&gt;
 &lt;p&gt;Clone or pull the latest version of the documentation repository from GitHub:&lt;/p&gt;
@@ -24,9 +24,9 @@
     </item>
     <item>
       <title>GitHub SSH Setup (Linux)</title>
-      <link>http://localhost:49329/posts/setup_github_ssh_linux/</link>
+      <link>http://localhost:49618/posts/setup_github_ssh_linux/</link>
       <pubDate>Thu, 01 May 2025 17:42:19 -0500</pubDate>
-      <guid>http://localhost:49329/posts/setup_github_ssh_linux/</guid>
+      <guid>http://localhost:49618/posts/setup_github_ssh_linux/</guid>
       <description>&lt;p&gt;Follow these steps to securely connect to GitHub using SSH on a Linux system.&lt;/p&gt;
 &lt;h2 id=&#34;-prerequisites&#34;&gt;📌 Prerequisites&lt;/h2&gt;
 &lt;ul&gt;
@@ -50,9 +50,9 @@
     </item>
     <item>
       <title>GitHub SSH Setup (Windows)</title>
-      <link>http://localhost:49329/posts/setup_github_ssh_windows/</link>
+      <link>http://localhost:49618/posts/setup_github_ssh_windows/</link>
       <pubDate>Thu, 01 May 2025 17:35:46 -0500</pubDate>
-      <guid>http://localhost:49329/posts/setup_github_ssh_windows/</guid>
+      <guid>http://localhost:49618/posts/setup_github_ssh_windows/</guid>
       <description>&lt;p&gt;Follow these steps to generate and use SSH keys on Windows for secure access to remote servers and services like GitHub, GitLab, or your own SSH server.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-prerequisites&#34;&gt;✅ Prerequisites&lt;/h2&gt;
