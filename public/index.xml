@@ -2,43 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Carter Keel Docs</title>
-    <link>http://localhost:51632/</link>
+    <link>http://localhost:58182/</link>
     <description>Recent content on Carter Keel Docs</description>
     <generator>Hugo -- 0.147.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 May 2025 17:42:19 -0500</lastBuildDate>
-    <atom:link href="http://localhost:51632/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 May 2025 22:27:35 -0500</lastBuildDate>
+    <atom:link href="http://localhost:58182/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add Post To Docs</title>
+      <link>http://localhost:58182/posts/add_post/</link>
+      <pubDate>Thu, 01 May 2025 22:27:35 -0500</pubDate>
+      <guid>http://localhost:58182/posts/add_post/</guid>
+      <description>&lt;p&gt;Follow these steps to add a new post to the documentation website.&lt;/p&gt;
+&lt;h2 id=&#34;1-pull-the-repository&#34;&gt;1. Pull the Repository&lt;/h2&gt;
+&lt;p&gt;Clone or pull the latest version of the documentation repository from GitHub:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git pull origin main&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-add-a-markdown-file&#34;&gt;2. Add a Markdown File&lt;/h2&gt;
+&lt;p&gt;Create a new Markdown (&lt;code&gt;.md&lt;/code&gt;) file in the following directory:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;content/posts/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This file will contain the content of the new post. Use standard Markdown formatting. Include front matter at the top of the file, for example:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>GitHub SSH Setup (Linux)</title>
-      <link>http://localhost:51632/posts/setup_github_ssh_linux/</link>
+      <link>http://localhost:58182/posts/setup_github_ssh_linux/</link>
       <pubDate>Thu, 01 May 2025 17:42:19 -0500</pubDate>
-      <guid>http://localhost:51632/posts/setup_github_ssh_linux/</guid>
-      <description>&lt;p&gt;✅ Prerequisites
-A Linux system (Ubuntu, Debian, Fedora, Arch, etc.)&lt;/p&gt;
-&lt;p&gt;Access to a terminal&lt;/p&gt;
-&lt;p&gt;OpenSSH installed (usually preinstalled)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;🧰 Generate a New SSH Key
-In your terminal, run:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;ssh-keygen -t ed25519 -C &amp;ldquo;&lt;a href=&#34;mailto:your_email@example.com&#34;&gt;your_email@example.com&lt;/a&gt;&amp;rdquo;
-If ed25519 is not supported, use:&lt;/p&gt;
-&lt;p&gt;ssh-keygen -t rsa -b 4096 -C &amp;ldquo;&lt;a href=&#34;mailto:your_email@example.com&#34;&gt;your_email@example.com&lt;/a&gt;&amp;rdquo;
-When prompted:
-Save location: Press Enter to use the default (/home/youruser/.ssh/id_ed25519)&lt;/p&gt;
-&lt;p&gt;Passphrase: (optional but recommended) Enter a secure passphrase&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;🔑 Add Your SSH Key to the SSH Agent
-Start the agent (if it’s not running):&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;eval &amp;ldquo;$(ssh-agent -s)&amp;rdquo;
-Add your key:&lt;/p&gt;</description>
+      <guid>http://localhost:58182/posts/setup_github_ssh_linux/</guid>
+      <description>&lt;p&gt;Follow these steps to securely connect to GitHub using SSH on a Linux system.&lt;/p&gt;
+&lt;h2 id=&#34;-prerequisites&#34;&gt;📌 Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A GitHub account&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git installed (&lt;code&gt;sudo apt install git&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OpenSSH client installed (&lt;code&gt;sudo apt install openssh-client&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-step-1-check-for-existing-ssh-keys&#34;&gt;🔑 Step 1: Check for Existing SSH Keys&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ls -al ~/.ssh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Look for files like &lt;code&gt;id_rsa.pub&lt;/code&gt; or &lt;code&gt;id_ed25519.pub&lt;/code&gt;. If they exist, you might already have an SSH key.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-step-2-generate-a-new-ssh-key&#34;&gt;🛠️ Step 2: Generate a New SSH Key&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ssh-keygen -t ed25519 -C &amp;quot;your_email@example.com&amp;quot;&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitHub SSH Setup (Windows)</title>
-      <link>http://localhost:51632/posts/setup_github_ssh_windows/</link>
+      <link>http://localhost:58182/posts/setup_github_ssh_windows/</link>
       <pubDate>Thu, 01 May 2025 17:35:46 -0500</pubDate>
-      <guid>http://localhost:51632/posts/setup_github_ssh_windows/</guid>
+      <guid>http://localhost:58182/posts/setup_github_ssh_windows/</guid>
       <description>&lt;p&gt;Follow these steps to generate and use SSH keys on Windows for secure access to remote servers and services like GitHub, GitLab, or your own SSH server.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-prerequisites&#34;&gt;✅ Prerequisites&lt;/h2&gt;

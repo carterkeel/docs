@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51632&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58182&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
@@ -9,17 +9,17 @@
 <meta name="keywords" content="">
 <meta name="description" content="Posts - Carter Keel Docs">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:51632/posts/">
+<link rel="canonical" href="http://localhost:58182/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:51632/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:51632/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:51632/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:51632/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:51632/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:58182/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:58182/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:58182/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:58182/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:58182/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:51632/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:51632/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:58182/posts/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:58182/posts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -74,7 +74,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:51632/" accesskey="h" title="Carter Keel Docs (Alt + H)">Carter Keel Docs</a>
+            <a href="http://localhost:58182/" accesskey="h" title="Carter Keel Docs (Alt + H)">Carter Keel Docs</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -99,6 +99,11 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:58182/search/" title="search">
+                    <span>search</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -111,21 +116,39 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">add_post
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Adding a New Post Follow these steps to add a new post to the documentation website.
+1. Pull the Repository Clone or pull the latest version of the documentation repository from GitHub:
+git pull origin main
+2. Add a Markdown File Create a new Markdown (.md) file in the following directory:
+content/posts/
+This file will contain the content of the new post. Use standard Markdown formatting. Include front matter at the top of the file, for example:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-01 22:27:35 -0500 CDT'>May 1, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to add_post" href="http://localhost:58182/posts/add_post/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">GitHub SSH Setup (Linux)
     </h2>
   </header>
   <div class="entry-content">
-    <p>✅ Prerequisites A Linux system (Ubuntu, Debian, Fedora, Arch, etc.)
-Access to a terminal
-OpenSSH installed (usually preinstalled)
-🧰 Generate a New SSH Key In your terminal, run: ssh-keygen -t ed25519 -C “your_email@example.com” If ed25519 is not supported, use:
-ssh-keygen -t rsa -b 4096 -C “your_email@example.com” When prompted: Save location: Press Enter to use the default (/home/youruser/.ssh/id_ed25519)
-Passphrase: (optional but recommended) Enter a secure passphrase
-🔑 Add Your SSH Key to the SSH Agent Start the agent (if it’s not running): eval “$(ssh-agent -s)” Add your key:
+    <p>Follow these steps to securely connect to GitHub using SSH on a Linux system.
+📌 Prerequisites A GitHub account
+Git installed (sudo apt install git)
+OpenSSH client installed (sudo apt install openssh-client)
+🔑 Step 1: Check for Existing SSH Keys ls -al ~/.ssh
+Look for files like id_rsa.pub or id_ed25519.pub. If they exist, you might already have an SSH key.
+🛠️ Step 2: Generate a New SSH Key ssh-keygen -t ed25519 -C &#34;your_email@example.com&#34;
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-05-01 17:42:19 -0500 CDT'>May 1, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to GitHub SSH Setup (Linux)" href="http://localhost:51632/posts/setup_github_ssh_linux/"></a>
+  <a class="entry-link" aria-label="post link to GitHub SSH Setup (Linux)" href="http://localhost:58182/posts/setup_github_ssh_linux/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -144,18 +167,11 @@ If your system doesn’t support ed25519, use:
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-05-01 17:35:46 -0500 CDT'>May 1, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to GitHub SSH Setup (Windows)" href="http://localhost:51632/posts/setup_github_ssh_windows/"></a>
+  <a class="entry-link" aria-label="post link to GitHub SSH Setup (Windows)" href="http://localhost:58182/posts/setup_github_ssh_windows/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:51632/">Carter Keel Docs</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
@@ -217,6 +233,7 @@ If your system doesn’t support ed25519, use:
     })
 
 </script>
+
 </body>
 
 </html>
