@@ -2,10 +2,3 @@ baseURL: https://example.org/
 languageCode: en-us
 title: Carter Keel Docs
 theme: ["PaperMod"]
-
-menu:
-  main: 
-    - identifier: search
-      name: search
-      url: /search/
-      weight: 10 
