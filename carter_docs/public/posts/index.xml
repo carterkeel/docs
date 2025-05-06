@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding New Post To Blog</title>
+      <link>http://localhost:1313/posts/adding_new_post/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/adding_new_post/</guid>
+      
+      <description>&lt;h1 id=&#34;adding-a-new-post&#34;&gt;Adding a New Post&lt;/h1&gt;
+&lt;p&gt;Follow these steps to add a new post to the documentation website.&lt;/p&gt;
+&lt;h2 id=&#34;1-pull-the-repository&#34;&gt;1. Pull the Repository&lt;/h2&gt;
+&lt;p&gt;Clone or pull the latest version of the documentation repository from GitHub:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git pull origin main&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-add-a-markdown-file&#34;&gt;2. Add a Markdown File&lt;/h2&gt;
+&lt;p&gt;Create a new Markdown (&lt;code&gt;.md&lt;/code&gt;) file in the following directory:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;content/posts/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This file will contain the content of the new post. Use standard Markdown formatting. Include front matter at the top of the file, for example:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>http://localhost:1313/posts/markdown_syntax/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/markdown_syntax/</guid>
+      
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Setup GitHub With SSH (Windows)</title>
+      <link>http://localhost:1313/posts/github_ssh_windows/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/github_ssh_windows/</guid>
+      
+      <description>&lt;p&gt;Follow these steps to generate and use SSH keys on Windows for secure access to remote servers and services like GitHub, GitLab, or your own SSH server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-prerequisites&#34;&gt;✅ Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Windows 10 or later&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Access to &lt;strong&gt;Command Prompt&lt;/strong&gt; or &lt;strong&gt;PowerShell&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://git-scm.com/download/win&#34;&gt;Git for Windows&lt;/a&gt; (includes &lt;code&gt;ssh&lt;/code&gt; and &lt;code&gt;ssh-keygen&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1--generate-a-new-ssh-key&#34;&gt;1. 🧰 Generate a New SSH Key&lt;/h2&gt;
+&lt;p&gt;Open your terminal and run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh-keygen -t ed25519 -C &amp;quot;your_email@example.com&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If your system doesn’t support &lt;code&gt;ed25519&lt;/code&gt;, use:&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
