@@ -1,8 +1,3 @@
----
-date: '2025-05-01T17:42:19-05:00'
-draft: false
-title: 'GitHub SSH Setup (Linux)'
----
 
 Follow these steps to securely connect to GitHub using SSH on a Linux system.
 
